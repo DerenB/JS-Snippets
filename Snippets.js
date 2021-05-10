@@ -16,6 +16,13 @@ for (let i = 1; i <= 10; i++) {
     console.log(i);
 }
 
+//For in Loop
+//* Loop through an object
+for(let item in fitBitData) {
+    console.log(item);  //Outputs the keys in the object fitBitData
+    console.log(`${item} value of ${fitBitData[item]}`);    //Ouputs key "value of" value
+}
+
 //For of Loop (not supported in IE)
 //* Shorthand For loop for iterating through a list or array
 let forOfArray = [1,2,3,4,5];
@@ -34,6 +41,8 @@ fitBitData["totalMiles"]; //Access value inside Object Literal
 fitBitData.totalMiles; //Access value inside Object Literal
 fitBitData.totalMiles = 6;  //Changes the value of the property
 fitBitData.totalSquats = 25;    //Creates a new property if not already created
+Object.keys(fitBitData);    //Creates an array of the keys in the object
+Object.values(fitBitData);  //Creates an array of the values in the object
 
 //Slice
 //* Slicing values from an Array
