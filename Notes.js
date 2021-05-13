@@ -62,6 +62,18 @@ const addArrows = (x,y) => {
     return x + y;
 }
 
+//! FUNCTION, ARROW IMPLICIT RETURN
+//* Only works if there is only 1 line/expression in the function
+const rollDie = () => (
+    Math.floor(Math.random() * 6) + 1
+);
+
+const implicitAdd = (a,b) => a + b;
+
+const newMovies = movies.map(movie => (
+    `${movie.title} - ${movie.score / 10}`
+));
+
 //! FUNCTION EXPRESSION
 //* Creating a function within an expression
 const add = function(x,y) {
@@ -101,6 +113,14 @@ function makeBetweenFunc(min, max) {
     }
     //Can call with let varName = makeBetweenFunc(min,max)
 }
+
+//! INTERVAL
+//* Sets an interval
+const id = setInterval(() => {
+    console.log(Math.random())
+}, 2000);
+//clearInterval(id) stops the interval
+
 
 //! MAP
 function cleanNames(input) {
@@ -174,6 +194,12 @@ const cat = {
         console.log(`${this.name} says Meow`);
     }
 }
+
+//! TIMEOUT
+//* Sets a timeout time period
+setTimeout(() => {
+    console.log("HELLO!!!")
+}, 3000);
 
 //! TRY CATCH
 //* Used to catch errors before they start
