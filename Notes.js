@@ -6,6 +6,8 @@
 // Regular comment
 
 console.log("Hello World");
+const testArrayNumbers = [1,2,3,4,5,6,7,8,9,10];
+const testArrayString = ["Aaa","Bbb","Ccc","Ddd","Eee"];
 
 //! CONSTANT
 //*Assigning a variable value that can't be changed
@@ -18,6 +20,7 @@ for (let i = 1; i <= 10; i++) {
 
 //! FOR EACH
 //* For loop that iterates through an Array
+//* Can use For Of Loop instead
 const numbers = [1,2,3,4,5];
 numbers.forEach(function (el) {
     console.log(el);
@@ -48,6 +51,28 @@ function testOut() {
 function testOut(name) {
     console.log(name);
 }
+
+//! FUNCTION, ARROWS
+//* Compact form of Expression Function
+const square = (x) => {
+    return x * x;
+}
+
+const addArrows = (x,y) => {
+    return x + y;
+}
+
+//! FUNCTION, ARROW IMPLICIT RETURN
+//* Only works if there is only 1 line/expression in the function
+const rollDie = () => (
+    Math.floor(Math.random() * 6) + 1
+);
+
+const implicitAdd = (a,b) => a + b;
+
+const newMovies = movies.map(movie => (
+    `${movie.title} - ${movie.score / 10}`
+));
 
 //! FUNCTION EXPRESSION
 //* Creating a function within an expression
@@ -87,6 +112,23 @@ function makeBetweenFunc(min, max) {
         return num >= min && num <= max;
     }
     //Can call with let varName = makeBetweenFunc(min,max)
+}
+
+//! INTERVAL
+//* Sets an interval
+const id = setInterval(() => {
+    console.log(Math.random())
+}, 2000);
+//clearInterval(id) stops the interval
+
+
+//! MAP
+function cleanNames(input) {
+    let newArray = input.map(stringTrim);
+    return newArray;
+}
+function stringTrim(str) {
+    return str.trim();
 }
 
 //! METHODS
@@ -152,6 +194,12 @@ const cat = {
         console.log(`${this.name} says Meow`);
     }
 }
+
+//! TIMEOUT
+//* Sets a timeout time period
+setTimeout(() => {
+    console.log("HELLO!!!")
+}, 3000);
 
 //! TRY CATCH
 //* Used to catch errors before they start
