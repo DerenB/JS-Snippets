@@ -145,6 +145,16 @@ const cat = {
     }
 }
 
+//TRY CATCH
+//* Used to catch errors before they start
+try {
+    //What to try
+    hellooooo.toUpperCase();
+} catch(e) {
+    console.log(e);
+    console.log("Error");
+}
+
 
 
 
