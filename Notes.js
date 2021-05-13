@@ -132,3 +132,19 @@ sortScores.sort();      //Doesn't work
 //* Deleting or Adding values into an Array
 colors.splice(5,1);     //Removes indigo
 colors.splice(1,0,'red-orance');     //Adds "Red-Orance" at index 1, deleting 0
+
+//THIS THIS THIS
+//* The value of this depends on the invocation context of the function it is use d in
+const cat = {
+    name: "Blue Steele",
+    color: "Grey",
+    breed: "Cat",
+    meow() {
+        console.log("Meow");
+        console.log(`${this.name} says Meow`);
+    }
+}
+
+
+
+
