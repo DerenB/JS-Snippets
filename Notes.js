@@ -41,6 +41,46 @@ function testOut(name) {
     console.log(name);
 }
 
+//Function Expression
+//* Creating a function within an expression
+const add = function(x,y) {
+    return x + y;
+}
+
+//Functions, Higher Order
+//* Functions that operate with other functions
+function callTwice(func) {
+    func();
+    func();
+}
+function rollDice() {
+    const roll = Math.floor(Math.random() * 6) + 1;
+    return roll;
+}
+callTwice(rollDice);
+
+//Function, Returning
+//* Returning a function
+function makeMysteryFunc() {
+    const rand = Math.random();
+    if (rand > 0.5) {
+        return function() {
+            console.log("You Win");
+        }
+    } else {
+        return function() {
+            console.log("You lose");
+        }
+    }
+}
+
+function makeBetweenFunc(min, max) {
+    return function(num) {
+        return num >= min && num <= max;
+    }
+    //Can call with let varName = makeBetweenFunc(min,max)
+}
+
 //Object Literal
 //*Creating an Object Literal and how to access it
 //* Every key created in an object is converted to a String
