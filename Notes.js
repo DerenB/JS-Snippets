@@ -81,6 +81,28 @@ function makeBetweenFunc(min, max) {
     //Can call with let varName = makeBetweenFunc(min,max)
 }
 
+//Methods
+const myMath = {
+    PI = 3.14159,
+    square : function(num) {
+        return num * num;
+    },
+    cube : function(num) {
+        return num ** 3;
+    }
+}
+
+//Method, Shorthand
+const mathMan = {
+    PI: 3.14159,
+    square(num) {
+        return num * num;
+    },
+    cube(num) {
+        return num ** 3;
+    }
+}
+
 //Object Literal
 //*Creating an Object Literal and how to access it
 //* Every key created in an object is converted to a String
