@@ -6,6 +6,8 @@
 // Regular comment
 
 console.log("Hello World");
+const testArrayNumbers = [1,2,3,4,5,6,7,8,9,10];
+const testArrayString = ["Aaa","Bbb","Ccc","Ddd","Eee"];
 
 //! CONSTANT
 //*Assigning a variable value that can't be changed
@@ -18,6 +20,7 @@ for (let i = 1; i <= 10; i++) {
 
 //! FOR EACH
 //* For loop that iterates through an Array
+//* Can use For Of Loop instead
 const numbers = [1,2,3,4,5];
 numbers.forEach(function (el) {
     console.log(el);
@@ -47,6 +50,16 @@ function testOut() {
 //! FUNCTION WITH PARAMETER
 function testOut(name) {
     console.log(name);
+}
+
+//! FUNCTION, ARROWS
+//* Compact form of Expression Function
+const square = (x) => {
+    return x * x;
+}
+
+const addArrows = (x,y) => {
+    return x + y;
 }
 
 //! FUNCTION EXPRESSION
@@ -87,6 +100,15 @@ function makeBetweenFunc(min, max) {
         return num >= min && num <= max;
     }
     //Can call with let varName = makeBetweenFunc(min,max)
+}
+
+//! MAP
+function cleanNames(input) {
+    let newArray = input.map(stringTrim);
+    return newArray;
+}
+function stringTrim(str) {
+    return str.trim();
 }
 
 //! METHODS
