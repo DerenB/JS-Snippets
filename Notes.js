@@ -7,47 +7,55 @@
 
 console.log("Hello World");
 
-//Constant
+//! CONSTANT
 //*Assigning a variable value that can't be changed
 const PI = 3.14159;
 
-//For Loop
+//! FOR LOOP
 for (let i = 1; i <= 10; i++) {
     console.log(i);
 }
 
-//For in Loop
+//! FOR EACH
+//* For loop that iterates through an Array
+const numbers = [1,2,3,4,5];
+numbers.forEach(function (el) {
+    console.log(el);
+})
+
+//! FOR IN LOOP
 //* Loop through an object
 for(let item in fitBitData) {
     console.log(item);  //Outputs the keys in the object fitBitData
     console.log(`${item} value of ${fitBitData[item]}`);    //Ouputs key "value of" value
 }
 
-//For of Loop (not supported in IE)
+//! FOR OF LOOP
+//* Not supported in IE
 //* Shorthand For loop for iterating through a list or array
 let forOfArray = [1,2,3,4,5];
 for (let i of forOfArray) {
     console.log(i);
 }
 
-//Function
+//! FUNCTION
 //* Basic Function
 function testOut() {
     console.log("We've been trying to reach you about your car's extended warranty .");
 }
 
-//Function with Parameter
+//! FUNCTION WITH PARAMETER
 function testOut(name) {
     console.log(name);
 }
 
-//Function Expression
+//! FUNCTION EXPRESSION
 //* Creating a function within an expression
 const add = function(x,y) {
     return x + y;
 }
 
-//Functions, Higher Order
+//! FUNCTION, HIGHER ORDER
 //* Functions that operate with other functions
 function callTwice(func) {
     func();
@@ -59,7 +67,7 @@ function rollDice() {
 }
 callTwice(rollDice);
 
-//Function, Returning
+//! FUNCTION, RETURNING
 //* Returning a function
 function makeMysteryFunc() {
     const rand = Math.random();
@@ -81,7 +89,7 @@ function makeBetweenFunc(min, max) {
     //Can call with let varName = makeBetweenFunc(min,max)
 }
 
-//Methods
+//! METHODS
 const myMath = {
     PI = 3.14159,
     square : function(num) {
@@ -92,7 +100,7 @@ const myMath = {
     }
 }
 
-//Method, Shorthand
+//! METHOD, SHORTHAND
 const mathMan = {
     PI: 3.14159,
     square(num) {
@@ -103,7 +111,7 @@ const mathMan = {
     }
 }
 
-//Object Literal
+//! OBJECT LITERAL
 //*Creating an Object Literal and how to access it
 //* Every key created in an object is converted to a String
 const fitBitData = {
@@ -117,23 +125,23 @@ fitBitData.totalSquats = 25;    //Creates a new property if not already created
 Object.keys(fitBitData);    //Creates an array of the keys in the object
 Object.values(fitBitData);  //Creates an array of the values in the object
 
-//Slice
+//! SLICE
 //* Slicing values from an Array
 let colors = ['red','orange','yellow','green','blue','indigo','violet'];
 let colorsSlice = colors.slice(3);  //["green", "blue", "indigo", "violet"]
 let warmColors = colors.slice(0,3); //['red','orange','yellow]
 
-//Sort
+//! SORT
 //* Default sort is to convert everything to a string then compares them by UTF value
 let sortScores = [1,70,100,2500,9,-12,0,34];
 sortScores.sort();      //Doesn't work
 
-//Splice
+//! SPLICE
 //* Deleting or Adding values into an Array
 colors.splice(5,1);     //Removes indigo
 colors.splice(1,0,'red-orance');     //Adds "Red-Orance" at index 1, deleting 0
 
-//THIS THIS THIS
+//! THIS
 //* The value of this depends on the invocation context of the function it is use d in
 const cat = {
     name: "Blue Steele",
@@ -145,7 +153,7 @@ const cat = {
     }
 }
 
-//TRY CATCH
+//! TRY CATCH
 //* Used to catch errors before they start
 try {
     //What to try
