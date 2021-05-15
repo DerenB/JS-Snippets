@@ -13,6 +13,21 @@ const testArrayString = ["Aaa","Bbb","Ccc","Ddd","Eee"];
 //*Assigning a variable value that can't be changed
 const PI = 3.14159;
 
+//! EVERY
+//* Tests if every element in an Array passes True
+//* See "Some" section
+testArrayNumbers.every(n => n > 5);
+
+//! FILTER
+//* Creates a new array with all elements that pass the test implemented by the function
+testArrayNumbers.filter(n => {
+    return n < 5;
+})
+function filterLongWords(inArray) {
+    //Function accepts an array, returns array of strings with less than 10 characters
+    return inArray.filter(n => n.length < 10);
+}
+
 //! FOR LOOP
 for (let i = 1; i <= 10; i++) {
     console.log(i);
@@ -167,11 +182,30 @@ fitBitData.totalSquats = 25;    //Creates a new property if not already created
 Object.keys(fitBitData);    //Creates an array of the keys in the object
 Object.values(fitBitData);  //Creates an array of the values in the object
 
+//! REDUCE METHOD
+//* Iterates through an array to accomplish some algorithm
+testArrayNumbers.reduce((total, element) => {
+    //* Returns the total of all the elements in the array
+    return total + element;
+})
+
+testArrayNumbers.reduce((min, element) => {
+    if(element < min) {
+        return element;
+    }
+    return min;
+})
+
 //! SLICE
 //* Slicing values from an Array
 let colors = ['red','orange','yellow','green','blue','indigo','violet'];
 let colorsSlice = colors.slice(3);  //["green", "blue", "indigo", "violet"]
 let warmColors = colors.slice(0,3); //['red','orange','yellow]
+
+//! SOME
+//* Tests if some of the elements in an Array passes True
+//* See "Every" section
+testArrayNumbers.some(n => n > 5);
 
 //! SORT
 //* Default sort is to convert everything to a string then compares them by UTF value
