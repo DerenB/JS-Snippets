@@ -190,6 +190,7 @@ testArrayNumbers.reduce((total, element) => {
 })
 
 testArrayNumbers.reduce((min, element) => {
+    //* Returns the lowest value of an array
     if(element < min) {
         return element;
     }
@@ -226,6 +227,13 @@ const cat = {
     meow() {
         console.log("Meow");
         console.log(`${this.name} says Meow`);
+    }
+}
+const person = {
+    firstName: "John",
+    lastName: "Shepard",
+    fullName: function() {
+        return `${this.firstName} ${this.lastName}`
     }
 }
 
