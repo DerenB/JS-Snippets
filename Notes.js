@@ -8,6 +8,14 @@
 console.log("Hello World");
 const testArrayNumbers = [1,2,3,4,5,6,7,8,9,10];
 const testArrayString = ["Aaa","Bbb","Ccc","Ddd","Eee"];
+const testObject = {
+    firstName: "Liara",
+    lastName: "T'Soni",
+    race: "Asari",
+    age: 106,
+    home: "Thessia",
+    recruitable: true
+}
 
 //! CONSTANT
 //*Assigning a variable value that can't be changed
@@ -18,6 +26,23 @@ const PI = 3.14159;
 //* Default paramets have to come after regular parameters
 function rollDefault(numSides = 6) {
     return Math.floor(Math.random() * numSides) + 1;
+}
+
+//! DESTRUCTURING, ARRAYS
+//* Used to assign variables to values in an array
+const[gold, silver, bronze, ...everyoneElse] = testArrayNumbers;
+//* Sets "gold" equal to array[0], "silver" equal to array[1], etc
+
+//! DESTRUCTURING, OBJECTS
+const {firstName} = testObject; 
+const {lastName: liarasName} = testObject;
+//* Use a colon to use a custom variable name
+const {ability = "Lift"} = testObject;
+//* Use a = for default values
+
+//! DESTRUCTURING, PARAMETERS
+function destroFullName({firstName = "lName", lastName = "fName"}) {
+    return `${firstName} ${lastName}`;
 }
 
 //! EVERY
@@ -203,6 +228,12 @@ testArrayNumbers.reduce((min, element) => {
     }
     return min;
 })
+
+//!! REST
+//* "..." used in the parameter when the number of arguments isn't known
+function restSum(...nums) {
+    return nums.reduce((total, el) => total + el);
+}
 
 //! SLICE
 //* Slicing values from an Array
