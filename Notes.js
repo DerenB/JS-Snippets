@@ -225,6 +225,17 @@ sortScores.sort();      //Doesn't work
 colors.splice(5,1);     //Removes indigo
 colors.splice(1,0,'red-orance');     //Adds "Red-Orance" at index 1, deleting 0
 
+//! SPREAD, ARRAYS
+//* Adding "..." can split an array into individual values
+Math.max(...testArrayNumbers);
+
+//! SPREAD, COMBINE ARRAYS
+//* Can be used to combine arrays into a new variable
+let comboArray = [...testArrayNumbers,...testArrayNumbers];
+
+//! SPREAD, OBJECTS
+let newArray1 = {...testArrayNumbers};
+
 //! THIS
 //* The value of this depends on the invocation context of the function it is use d in
 const cat = {
