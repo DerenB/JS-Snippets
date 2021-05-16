@@ -13,6 +13,13 @@ const testArrayString = ["Aaa","Bbb","Ccc","Ddd","Eee"];
 //*Assigning a variable value that can't be changed
 const PI = 3.14159;
 
+//! DEFAULT PARAMETERS
+//* Default value if the user doesn't enter one
+//* Default paramets have to come after regular parameters
+function rollDefault(numSides = 6) {
+    return Math.floor(Math.random() * numSides) + 1;
+}
+
 //! EVERY
 //* Tests if every element in an Array passes True
 //* See "Some" section
