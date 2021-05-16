@@ -8,10 +8,42 @@
 console.log("Hello World");
 const testArrayNumbers = [1,2,3,4,5,6,7,8,9,10];
 const testArrayString = ["Aaa","Bbb","Ccc","Ddd","Eee"];
+const testObject = {
+    firstName: "Liara",
+    lastName: "T'Soni",
+    race: "Asari",
+    age: 106,
+    home: "Thessia",
+    recruitable: true
+}
 
 //! CONSTANT
 //*Assigning a variable value that can't be changed
 const PI = 3.14159;
+
+//! DEFAULT PARAMETERS
+//* Default value if the user doesn't enter one
+//* Default paramets have to come after regular parameters
+function rollDefault(numSides = 6) {
+    return Math.floor(Math.random() * numSides) + 1;
+}
+
+//! DESTRUCTURING, ARRAYS
+//* Used to assign variables to values in an array
+const[gold, silver, bronze, ...everyoneElse] = testArrayNumbers;
+//* Sets "gold" equal to array[0], "silver" equal to array[1], etc
+
+//! DESTRUCTURING, OBJECTS
+const {firstName} = testObject; 
+const {lastName: liarasName} = testObject;
+//* Use a colon to use a custom variable name
+const {ability = "Lift"} = testObject;
+//* Use a = for default values
+
+//! DESTRUCTURING, PARAMETERS
+function destroFullName({firstName = "lName", lastName = "fName"}) {
+    return `${firstName} ${lastName}`;
+}
 
 //! EVERY
 //* Tests if every element in an Array passes True
@@ -197,6 +229,12 @@ testArrayNumbers.reduce((min, element) => {
     return min;
 })
 
+//!! REST
+//* "..." used in the parameter when the number of arguments isn't known
+function restSum(...nums) {
+    return nums.reduce((total, el) => total + el);
+}
+
 //! SLICE
 //* Slicing values from an Array
 let colors = ['red','orange','yellow','green','blue','indigo','violet'];
@@ -217,6 +255,17 @@ sortScores.sort();      //Doesn't work
 //* Deleting or Adding values into an Array
 colors.splice(5,1);     //Removes indigo
 colors.splice(1,0,'red-orance');     //Adds "Red-Orance" at index 1, deleting 0
+
+//! SPREAD, ARRAYS
+//* Adding "..." can split an array into individual values
+Math.max(...testArrayNumbers);
+
+//! SPREAD, COMBINE ARRAYS
+//* Can be used to combine arrays into a new variable
+let comboArray = [...testArrayNumbers,...testArrayNumbers];
+
+//! SPREAD, OBJECTS
+let newArray1 = {...testArrayNumbers};
 
 //! THIS
 //* The value of this depends on the invocation context of the function it is use d in
