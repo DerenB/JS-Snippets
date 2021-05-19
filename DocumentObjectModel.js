@@ -27,10 +27,16 @@ document.querySelector('.class');
 document.querySelector('#Id');
 document.querySelector('a[title="Java"]');
 
-//! QUESY SELECTOR, ALL
+//! QUERY SELECTOR, ALL
 //* Returns all of type instead of just first
 document.querySelectorAll('p');
 document.querySelectorAll('p a');
+
+//! QUERY SELECTOR, ATTRIBUTES
+const qSelectAttri = document.querySelector('a').title;
+qSelectAttri.getAttribute('href');
+qSelectAttri.setAttribute('href','https://www.google.com/');
+
 
 //! TEXT, CONTENT
 //* Retrieves the text from the markup
