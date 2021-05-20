@@ -1,6 +1,13 @@
 //! DOM: Document Object Model
 //* Document Object contains all of the html
 
+//! CLASS APPLY
+const classApply = document.querySelector('h2');
+classApply.setAttribute('class', 'className');
+
+//! CLASS LIST
+classApply.classList.add('purple');
+
 
 //! GET ELEMENT BY ID
 //* Looks for an element in the HTML with a certain ID
