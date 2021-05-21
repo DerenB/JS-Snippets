@@ -17,9 +17,34 @@ const testObject = {
     recruitable: true
 }
 
+//! CLASS, CONSTRUCTOR FUNCTION
+class ClassConstructor {
+    constructor(inputVar) {
+        this.inputVar = inputVar;
+    }
+}
+const classConExample = new ClassConstructor('iAmInput');
+
+//! CLASS, GETTERS & SETTERS
+class GetAndSet {
+    constructor(input) {
+        this.input = input;
+    }
+    get myVar() {
+        return this.input;
+    }
+    set myVar(updateInput) {
+        this.input = updateInput;
+    }
+}
+
 //! CONSTANT
 //*Assigning a variable value that can't be changed
 const PI = 3.14159;
+
+//! CONSTANT, MUTABLE
+const cstMute = [1,2,3];
+cstMute[2] = 45;
 
 //! DEFAULT PARAMETERS
 //* Default value if the user doesn't enter one
@@ -200,6 +225,13 @@ const mathMan = {
     }
 }
 
+//! OBJECT FREEZE
+let objFreeze = {
+    name: "Shepard",
+    review: "Fun"
+};
+Object.freeze(objFreeze);
+
 //! OBJECT LITERAL
 //*Creating an Object Literal and how to access it
 //* Every key created in an object is converted to a String
@@ -266,6 +298,10 @@ let comboArray = [...testArrayNumbers,...testArrayNumbers];
 
 //! SPREAD, OBJECTS
 let newArray1 = {...testArrayNumbers};
+
+//! STRING TEMPLATE LITERALS
+const templateLiteral = `Hello, my name is ${testObject.firstName} ${testObject.lastName}. 
+I am ${testObject.race}.`;
 
 //! THIS
 //* The value of this depends on the invocation context of the function it is use d in
