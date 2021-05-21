@@ -8,6 +8,7 @@
 console.log("Hello World");
 const testArrayNumbers = [1,2,3,4,5,6,7,8,9,10];
 const testArrayString = ["Aaa","Bbb","Ccc","Ddd","Eee"];
+const testString = "All your base are belong to us.";
 const testObject = {
     firstName: "Liara",
     lastName: "T'Soni",
@@ -203,6 +204,16 @@ function stringTrim(str) {
     return str.trim();
 }
 
+//! MATCH
+//* Similar to test, extracts the actual match
+//* i at the end to ignore case
+let matchRegex = /base/;
+let matchResult = testString.match(matchRegex);
+
+//! MATCH, MULTIPLE RETURNS
+let matchMultiple = /base/g;
+let matchMultiResult = testString.match(matchMultiple);
+
 //! METHODS
 const myMath = {
     PI = 3.14159,
@@ -302,6 +313,22 @@ let newArray1 = {...testArrayNumbers};
 //! STRING TEMPLATE LITERALS
 const templateLiteral = `Hello, my name is ${testObject.firstName} ${testObject.lastName}. 
 I am ${testObject.race}.`;
+
+//! TEST METHOD
+//* Can be used to find a word in a string. Returns T/F
+//* Case Sensitive.
+let testMethodRegex = /base/;
+testMethodRegex.test(testString);
+
+//! TEST METHOD, OR
+//* Used for searching for multiple values with OR
+let testMethodOr = /base|belong|cracker/;
+testMethodOr.test(testString);
+
+//! TEST METHOD, IGNORE CASE
+//* Ignores the case
+let testMethodIgnore = /belong/i;
+testMethodIgnore.test(testString);
 
 //! THIS
 //* The value of this depends on the invocation context of the function it is use d in
