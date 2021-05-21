@@ -214,6 +214,23 @@ let matchResult = testString.match(matchRegex);
 let matchMultiple = /base/g;
 let matchMultiResult = testString.match(matchMultiple);
 
+//! MATCH, MULTIPLE POSSIBILITIES
+let matchMultiStr = "big bag man 123456 12 3";
+let matchMultiOptions = /b[aiu]g/gi;        //Will look for bag, big, bug
+matchMultiStr.match(matchMultiOptions);
+
+//! MATCH, RANGE OF LETTERS
+let matchLetterRange = /[a-z]/gi;       //Will match with any letter in the range A to Z
+matchMultiStr.match(matchLetterRange);
+
+//! MATCH, RANGE OF NUMBERS
+let matchNumberRange = /[0-5]/gi;       //Will match with any number between 0 and 5, including 0 and 5
+matchMultiStr.match(matchNumberRange);
+
+//! MATCH, COMBO LETTERS AND NUMBERS
+let matchCombo = /[a-z0-5]/;            //Will match letters A to Z and numbers 0 to 5
+matchMultiStr.match(matchCombo);
+
 //! METHODS
 const myMath = {
     PI = 3.14159,
@@ -329,6 +346,12 @@ testMethodOr.test(testString);
 //* Ignores the case
 let testMethodIgnore = /belong/i;
 testMethodIgnore.test(testString);
+
+//! TEST WILDCARD
+//* Tests for a single character or part of a word
+let testWildString = "It's fun to run with a man bun.";
+let testWildRegex = /un./;
+testWildRegex.test(testWildString);
 
 //! THIS
 //* The value of this depends on the invocation context of the function it is use d in
