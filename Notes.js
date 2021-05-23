@@ -227,6 +227,12 @@ matchMultiStr.match(matchLetterRange);
 let matchNumberRange = /[0-5]/gi;       //Will match with any number between 0 and 5, including 0 and 5
 matchMultiStr.match(matchNumberRange);
 
+//! MATCH, ALL LETTERS AND NUMBERS
+//* \w Will check for all letters and numbers
+let quoteSample = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/g; 
+let result = quoteSample.match(alphabetRegexV2).length;
+
 //! MATCH, COMBO LETTERS AND NUMBERS
 let matchCombo = /[a-z0-5]/gi;            //Will match letters A to Z and numbers 0 to 5
 matchMultiStr.match(matchCombo);
@@ -368,6 +374,10 @@ let calRegex = /^Cal/;          // Checks for "Cal" at the start of the string, 
 let result = calRegex.test(rickyAndCal);
 
 //! TEST, CHECK END OF STRING
+//* Tests for the input at the end of the string
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/;     // Checks for "caboose" at the end of the string, returns true
+let result = lastRegex.test(caboose);
 
 //! THIS
 //* The value of this depends on the invocation context of the function it is use d in
