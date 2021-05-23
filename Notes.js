@@ -228,8 +228,16 @@ let matchNumberRange = /[0-5]/gi;       //Will match with any number between 0 a
 matchMultiStr.match(matchNumberRange);
 
 //! MATCH, COMBO LETTERS AND NUMBERS
-let matchCombo = /[a-z0-5]/;            //Will match letters A to Z and numbers 0 to 5
+let matchCombo = /[a-z0-5]/gi;            //Will match letters A to Z and numbers 0 to 5
 matchMultiStr.match(matchCombo);
+
+//! MATCH, IGNORE VALUES
+let matchNeg = /[^aeiou]/gi;      // Will ignore the vowels
+matchMultiStr.match(matchNeg);
+
+//! MATCH, MULTIPLE VALUES
+let matchPlus = /s+/g;
+matchMultiStr.match(matchPlus);
 
 //! METHODS
 const myMath = {
@@ -352,6 +360,14 @@ testMethodIgnore.test(testString);
 let testWildString = "It's fun to run with a man bun.";
 let testWildRegex = /un./;
 testWildRegex.test(testWildString);
+
+//! TEST, CHECK START OF STRING
+//* Tests for the input at the start of the string
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/;          // Checks for "Cal" at the start of the string, returns True
+let result = calRegex.test(rickyAndCal);
+
+//! TEST, CHECK END OF STRING
 
 //! THIS
 //* The value of this depends on the invocation context of the function it is use d in
