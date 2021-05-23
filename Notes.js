@@ -227,12 +227,6 @@ matchMultiStr.match(matchLetterRange);
 let matchNumberRange = /[0-5]/gi;       //Will match with any number between 0 and 5, including 0 and 5
 matchMultiStr.match(matchNumberRange);
 
-//! MATCH, ALL LETTERS AND NUMBERS
-//* \w Will check for all letters and numbers
-let quoteSample = "The five boxing wizards jump quickly.";
-let alphabetRegexV2 = /\w/g; 
-let result = quoteSample.match(alphabetRegexV2).length;
-
 //! MATCH, COMBO LETTERS AND NUMBERS
 let matchCombo = /[a-z0-5]/gi;            //Will match letters A to Z and numbers 0 to 5
 matchMultiStr.match(matchCombo);
@@ -244,6 +238,20 @@ matchMultiStr.match(matchNeg);
 //! MATCH, MULTIPLE VALUES
 let matchPlus = /s+/g;
 matchMultiStr.match(matchPlus);
+
+//! MATCH, ALL LETTERS AND NUMBERS
+//* \w Will check for all letters and numbers
+//* Has to be lower case
+let quoteSample = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/g; 
+let result = quoteSample.match(alphabetRegexV2).length;
+
+//! MATCH, IGNORE ALL LETTERS AND NUMBERS
+//* Will ignore all letters and numbers
+//* Has to be capital
+let quoteSample = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W/g; 
+let result = quoteSample.match(nonAlphabetRegex).length;
 
 //! METHODS
 const myMath = {
