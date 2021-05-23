@@ -253,6 +253,12 @@ let quoteSample = "The five boxing wizards jump quickly.";
 let nonAlphabetRegex = /\W/g; 
 let result = quoteSample.match(nonAlphabetRegex).length;
 
+//! MATCH, ALL NUMBERS
+//* Matches will all numbers
+let movieName = "2001: A Space Odyssey";
+let numRegex = /\d/g; 
+let result = movieName.match(numRegex).length;
+
 //! METHODS
 const myMath = {
     PI = 3.14159,
