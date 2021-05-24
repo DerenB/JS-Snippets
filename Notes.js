@@ -255,9 +255,31 @@ let result = quoteSample.match(nonAlphabetRegex).length;
 
 //! MATCH, ALL NUMBERS
 //* Matches will all numbers
+//* Has to be lowercase
 let movieName = "2001: A Space Odyssey";
 let numRegex = /\d/g; 
 let result = movieName.match(numRegex).length;
+
+//! MATCH, ALL NON-NUMBERS
+//* Matches will all non-numbers
+//* Has to be uppercase
+let movieName = "2001: A Space Odyssey";
+let noNumRegex = /\D/g; 
+let result = movieName.match(noNumRegex).length;
+
+//! MATCH, WHITESPACE
+//* Also matches carriage return, tab, form feed, new line characters
+//* Has to be lowercase
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g; 
+let result = sample.match(countWhiteSpace);
+
+//! MATCH, NON WHITESPACE
+//* Won't match carriage return, tab, form feed, new line characters
+//* Has to be uppercase
+let sample = "Whitespace is important in separating words";
+let countNonWhiteSpace = /\S/g;
+let result = sample.match(countNonWhiteSpace);
 
 //! METHODS
 const myMath = {

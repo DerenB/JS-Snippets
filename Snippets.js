@@ -31,3 +31,22 @@ function leapYear() {
     }
 }
 
+//! USER NAME
+//* Checks username input if it's the correct format.
+//* 1) Username can only use alpha-numeric characters.
+//* 2) Numbers can only be at the end. Cannot start with number.
+//* 3) Can be upper or lower case.
+//* 4) Has to be at least 2 characters long.
+//* 5) Two character names can't have numbers
+
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i;
+let result = userCheck.test(username);
+// ^[a-z] Checks if the start of the name is a alpha character
+// [a-z]+ Checks if the following characters are letters
+// \d*$ Checks if the end is 0 or more digits
+// | OR
+// ^[a-z] Checks if the start of the name is a alpha character
+// \d\d+$ Following characters are 2 or more digits
+
+
