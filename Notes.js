@@ -415,6 +415,18 @@ let caboose = "The last car on a train is the caboose";
 let lastRegex = /caboose$/;     // Checks for "caboose" at the end of the string, returns true
 let result = lastRegex.test(caboose);
 
+//! TEST, NUMBER OF RANGE
+//* Tests if a value is within a specified range
+let ohStr = "Ohhh no";
+let ohRegex = /Oh{3,6}\sno/;    // Tests if h occurs 3 to 6 times only
+let result = ohRegex.test(ohStr);
+
+//! TEST, MINIMUM RANGE
+//* Tests if the lower end of the specified range is met
+let haStr = "Hazzzzah";
+let haRegex = /Haz{4,}ah/;      // Tests if there are at least 4 z's
+let result = haRegex.test(haStr);
+
 //! THIS
 //* The value of this depends on the invocation context of the function it is use d in
 const cat = {
