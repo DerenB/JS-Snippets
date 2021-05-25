@@ -427,6 +427,18 @@ let haStr = "Hazzzzah";
 let haRegex = /Haz{4,}ah/;      // Tests if there are at least 4 z's
 let result = haRegex.test(haStr);
 
+//! TEST, REPEAT CERTAIN TIMES
+//* Tests if a character repeats a specific number of times
+let timStr = "Timmmmber";
+let timRegex = /Tim{4}ber/;     //Checks if m repeats 4 times
+let result = timRegex.test(timStr);
+
+//! TEST, CHECK ALL OR NONE
+//* Tests if element may or may not exists
+let favWord = "favorite";
+let favRegex = /favou?rite/; // Checks if the U exists or not
+let result = favRegex.test(favWord);
+
 //! THIS
 //* The value of this depends on the invocation context of the function it is use d in
 const cat = {
