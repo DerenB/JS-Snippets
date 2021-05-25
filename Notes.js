@@ -439,6 +439,15 @@ let favWord = "favorite";
 let favRegex = /favou?rite/; // Checks if the U exists or not
 let result = favRegex.test(favWord);
 
+//! TEST, POSITIVE AND NEGATIVE LOOKAHEAD
+//* Positive looks ahead to see if the pattern is there but won't match
+//* Negative looks ahead to see if the pattern is NOT there
+//* ?= Checks for Positive lookahead
+//* ?! Checks for Negavive lookahead
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{6})(?=\w*\d{2})/; 
+let result = pwRegex.test(sampleWord);
+
 //! THIS
 //* The value of this depends on the invocation context of the function it is use d in
 const cat = {
