@@ -455,6 +455,12 @@ let sampleWord = "astronaut";
 let pwRegex = /(?=\w{6})(?=\w*\d{2})/; 
 let result = pwRegex.test(sampleWord);
 
+//! TEST, MIXED GROUP OF CHARACTERS
+//* Checks for groups of characters
+let myString = "Eleanor Roosevelt";
+let myRegex = /(Franklin D.|Eleanor) Roosevelt/; 
+let result = myRegex.test(myString); 
+
 //! THIS
 //* The value of this depends on the invocation context of the function it is use d in
 const cat = {
