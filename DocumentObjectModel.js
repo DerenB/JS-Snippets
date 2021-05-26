@@ -46,6 +46,12 @@ document.getElementsByClassName("");
 //* Can be used to change html
 document.querySelector('p').innerHTML;
 
+//! ONCLICK
+const btn = document.querySelector('#v2');
+btn.onclick = function() {
+    console.log("Button clicked");
+}
+
 //! PREPEND
 //* Opposite of Append
 document.prepend("I'm at the start.");
