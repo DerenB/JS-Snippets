@@ -339,6 +339,13 @@ testArrayNumbers.reduce((min, element) => {
     return min;
 })
 
+//! REPLACE, REMOVE WHITESPACE
+//* Removes whitespace at the beginning and the end
+//* Similar to .trim()
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g; 
+let result = hello.replace(wsRegex, ""); 
+
 //!! REST
 //* "..." used in the parameter when the number of arguments isn't known
 function restSum(...nums) {
