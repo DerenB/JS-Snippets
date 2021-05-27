@@ -3,9 +3,9 @@
 
 //! ADJACENT ELEMENT, INSERT
 const adjInsert = document.createElement('h2');
-h2.append("I'm a h2");
+adjInsert.append("I'm a h2");
 const adjH2 = document.querySelector('h2');
-h2.insertAdjacentElement('afterend', adjInsert);
+adjH2.insertAdjacentElement('afterend', adjInsert);
 
 //! APPEND
 //* Can't use appendChild
@@ -29,6 +29,12 @@ classApply.classList.toggle('green');
 const newImg = document.createElement('img');   //Assigns new element to variable
 newImg.src = 'image.html';  //Adds the source to the image
 document.body.appendChild(newImg);  //Adds the image to the end of the body
+
+//! EVENT LISTENER
+const bt3 = document.querySelector("#v3");
+bt3.addEventListener('click', function() {
+    alert("Version 3 clicked")
+})
 
 //! GET ELEMENT BY ID
 //* Looks for an element in the HTML with a certain ID
