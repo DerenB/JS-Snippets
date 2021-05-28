@@ -13,6 +13,11 @@ function capitalize(line) {
     return newStr;
 }
 
+//! CELSIUS TO FAHRENHEIT
+function convertToF(celsius) {
+    return (celsius * (9/5)) + 32;
+  }
+
 //! LEAP YEAR
 function leapYear() {
     let year = window.prompt("Enter a Year: ");
@@ -30,6 +35,16 @@ function leapYear() {
         }
     }
 }
+
+//! REVERSE STRING
+function reverseString(str) {
+    let myArray = [];
+    for (let i = str.length-1; i > -1; i--) {
+      myArray.push(str.charAt(i))
+    }
+    let newStr = myArray.join("");
+    return newStr;
+  }
 
 //! USER NAME
 //* Checks username input if it's the correct format.
