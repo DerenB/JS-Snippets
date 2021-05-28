@@ -367,6 +367,11 @@ let colors = ['red','orange','yellow','green','blue','indigo','violet'];
 let colorsSlice = colors.slice(3);  //["green", "blue", "indigo", "violet"]
 let warmColors = colors.slice(0,3); //['red','orange','yellow]
 
+//! SPLIT
+//* Splits a word or string at declared variable
+let splitBySpace = myArray.split(" ");  //Splits every whitespace
+let splitByChar = myArray.split("");    //Splits every char
+
 //! SOME
 //* Tests if some of the elements in an Array passes True
 //* See "Every" section
