@@ -5,12 +5,25 @@
 // ? Question comment
 // Regular comment
 
-//! CAPITALIZE THE FIRST LETTER 
+//! CAPITALIZE THE FIRST LETTER OF WORD
 //* Capitalizes the first letter of a string
 function capitalize(line) {
-    let first = line.chatAt(0).toUpperCase();
+    let first = line.charAt(0).toUpperCase();
     let newStr = first + line.substring(1,line.length);
     return newStr;
+}
+
+//! CAPITALIZE FIRST LETTER OF EVERY WORD IN STRING
+//* Accepts string of words as input, capitalizes the first letter of every word
+//* Uses the capitalize function
+function titleCase(str) {
+  let strArry = str.split(" ");
+  let newArray = [];
+  for(let i = 0; i < strArry.length; i++) {
+    let mod = capitalize(strArry[i].toLowerCase());
+    newArray.push(mod);
+  }
+  return newArray.join(" ");
 }
 
 //! CELSIUS TO FAHRENHEIT
