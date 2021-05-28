@@ -19,6 +19,19 @@ function convertToF(celsius) {
     return (celsius * (9/5)) + 32;
 }
 
+//! ENDSWITH STRING
+//* Checks if the string ends with given input without endsWith() method
+function confirmEnding(str, target) {
+    let strLen = str.length-1;
+    for(let i = target.length-1; i > -1; i--) {
+        if (target.charAt(i) !== str.charAt(strLen)) {
+            return false;
+        }
+        strLen--;
+    }
+    return true;
+}
+
 //! FACTORIAL
 //* Calculates the factorial value of an input
 function factorialize(num) {
