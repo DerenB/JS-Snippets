@@ -92,6 +92,21 @@ function findLongestWordLength(str) {
     return longest;
 }
 
+//! REPEAT A STRING X TIMES
+//* Repeats a string input number of times
+function repeatStringNumTimes(str, num) {
+    if (num < 1) {
+        return "";
+    } else {
+        let myArray = [];
+        for(let i = 0; i < num; i++) {
+            myArray.push(str);
+        }
+        let output = myArray.join("");
+        return output;
+    }
+}
+
 //! REVERSE STRING
 //* Reverses a string
 function reverseString(str) {
