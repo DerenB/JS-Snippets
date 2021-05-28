@@ -466,6 +466,12 @@ let repeatNum = "42 42 42";
 let reRegex = /^(\d+)\s\1\s\1$/; 
 let result = reRegex.test(repeatNum);
 
+//! TEST, REPLACE
+let str = "one two three";
+let fixRegex = /(\w+)\s(\w+)\s(\w+)/; 
+let replaceText = "$3 $2 $1"; 
+let result = str.replace(fixRegex, replaceText);
+
 //! THIS
 //* The value of this depends on the invocation context of the function it is use d in
 const cat = {
