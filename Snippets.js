@@ -21,11 +21,28 @@ function convertToF(celsius) {
 //! FACTORIAL
 function factorialize(num) {
     if (num === 1 || num === 0) {
-      return 1;
+        return 1;
     } else {
-      return num * factorialize(num - 1);
+        return num * factorialize(num - 1);
     }
 }
+
+//! LARGEST NUMBER IN ARRAY OF ARRAYS
+function largestOfFour(arr) {
+    let solution = [];
+    for (let i = 0; i < arr.length; i++) {
+        let largest = null;
+        for (let k = 0; k < arr[i].length; k++) {
+            if (largest === null) {
+                largest = arr[i][k];
+            } else if (largest < arr[i][k]) {
+                largest = arr[i][k];
+            }
+        }
+        solution.push(largest);
+    }
+    return solution;
+  }
 
 //! LEAP YEAR
 function leapYear() {
@@ -50,9 +67,9 @@ function findLongestWordLength(str) {
     let myArray = str.split(" ");
     let longest = myArray[0].length;
     for (let i = 0; i < myArray.length; i++) {
-      if (longest < myArray[i].length) {
-        longest = myArray[i].length;
-      }
+        if (longest < myArray[i].length) {
+            longest = myArray[i].length;
+        }
     }
     return longest;
 }
@@ -61,11 +78,11 @@ function findLongestWordLength(str) {
 function reverseString(str) {
     let myArray = [];
     for (let i = str.length-1; i > -1; i--) {
-      myArray.push(str.charAt(i))
+        myArray.push(str.charAt(i))
     }
     let newStr = myArray.join("");
     return newStr;
-  }
+}
 
 //! USER NAME
 //* Checks username input if it's the correct format.
