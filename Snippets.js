@@ -14,11 +14,13 @@ function capitalize(line) {
 }
 
 //! CELSIUS TO FAHRENHEIT
+//* Converts a celsius input to fahrenheit
 function convertToF(celsius) {
     return (celsius * (9/5)) + 32;
 }
 
 //! FACTORIAL
+//* Calculates the factorial value of an input
 function factorialize(num) {
     if (num === 1 || num === 0) {
         return 1;
@@ -28,6 +30,7 @@ function factorialize(num) {
 }
 
 //! LARGEST NUMBER IN ARRAY OF ARRAYS
+//* Returns an Array of the largest values in an Array of Arrays
 function largestOfFour(arr) {
     let solution = [];
     for (let i = 0; i < arr.length; i++) {
@@ -45,6 +48,7 @@ function largestOfFour(arr) {
   }
 
 //! LEAP YEAR
+//* Tests if the inputed year is a leap year
 function leapYear() {
     let year = window.prompt("Enter a Year: ");
     if (year <= 1582) {
@@ -63,6 +67,7 @@ function leapYear() {
 }
 
 //! LONGEST WORD IN STRING
+//* Returns the length of the longest word in a string
 function findLongestWordLength(str) {
     let myArray = str.split(" ");
     let longest = myArray[0].length;
@@ -75,6 +80,7 @@ function findLongestWordLength(str) {
 }
 
 //! REVERSE STRING
+//* Reverses a string
 function reverseString(str) {
     let myArray = [];
     for (let i = str.length-1; i > -1; i--) {
