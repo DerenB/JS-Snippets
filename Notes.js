@@ -18,6 +18,15 @@ const testObject = {
     recruitable: true
 }
 
+//! ARRAY, DECLARE
+let myArray = [];
+
+//! ARRAY, ADD ITEM AT END
+myArray.push("value");
+
+//! ARRAY, COMBINE CHAR ARRAY INTO STRING
+let joinString = myArray.join("");
+
 //! CLASS, CONSTRUCTOR FUNCTION
 class ClassConstructor {
     constructor(inputVar) {
