@@ -16,7 +16,16 @@ function capitalize(line) {
 //! CELSIUS TO FAHRENHEIT
 function convertToF(celsius) {
     return (celsius * (9/5)) + 32;
-  }
+}
+
+//! FACTORIAL
+function factorialize(num) {
+    if (num === 1 || num === 0) {
+      return 1;
+    } else {
+      return num * factorialize(num - 1);
+    }
+}
 
 //! LEAP YEAR
 function leapYear() {
@@ -34,6 +43,18 @@ function leapYear() {
             alert("Not a leap year.");
         }
     }
+}
+
+//! LONGEST WORD IN STRING
+function findLongestWordLength(str) {
+    let myArray = str.split(" ");
+    let longest = myArray[0].length;
+    for (let i = 0; i < myArray.length; i++) {
+      if (longest < myArray[i].length) {
+        longest = myArray[i].length;
+      }
+    }
+    return longest;
 }
 
 //! REVERSE STRING
