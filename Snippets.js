@@ -118,6 +118,22 @@ function reverseString(str) {
     return newStr;
 }
 
+//! TRUNCATE A STRING
+//* Truncates a string up to a given length
+function truncateString(str, num) {
+    if (num >= str.length) {
+        return str;
+    } else {
+        let strSplit = str.split("");
+        let newArr = [];
+        for(let i = 0; i < num; i++) {
+            newArr.push(strSplit[i]);
+        }
+        newArr.push("...");
+        return newArr.join("");
+    }
+}
+
 //! USER NAME
 //* Checks username input if it's the correct format.
 //* 1) Username can only use alpha-numeric characters.
