@@ -55,6 +55,18 @@ function factorialize(num) {
     }
 }
 
+//! INSERT ARRAY VALUES INTO ANOTHER ARRAY
+//* Uses splice to insert array values into another array at given index
+//* Does not modify the original two arrays
+function frankenSplice(arr1, arr2, n) {
+    let newArr = arr2.slice();
+    for(let i = 0; i < arr1.length; i++) {
+        newArr.splice(n, 0, arr1[i]);
+        n++;
+    }
+    return newArr;
+}
+
 //! LARGEST NUMBER IN ARRAY OF ARRAYS
 //* Returns an Array of the largest values in an Array of Arrays
 function largestOfFour(arr) {
