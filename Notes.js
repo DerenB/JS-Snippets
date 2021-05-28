@@ -461,6 +461,11 @@ let myString = "Eleanor Roosevelt";
 let myRegex = /(Franklin D.|Eleanor) Roosevelt/; 
 let result = myRegex.test(myString); 
 
+//! TEST, REPEAT CHARACTERS
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+)\s\1\s\1$/; 
+let result = reRegex.test(repeatNum);
+
 //! THIS
 //* The value of this depends on the invocation context of the function it is use d in
 const cat = {
