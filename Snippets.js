@@ -130,6 +130,29 @@ function findLongestWordLength(str) {
     return longest;
 }
 
+//! POSITION FOR INSERTING VALUE
+//* Returns the index of where a value would be inserted into an array
+function getIndexToIns(arr, num) {
+    for(let i = 0; i < arr.length; i++) {
+        for(let k = arr.length - 1; k > 0; k--) {
+            let temp = 0;
+            if(arr[k-1] > arr[k]) {
+                temp = arr[k];
+                arr[k] = arr[k-1];
+                arr[k-1] = temp;
+            }
+        }
+    } 
+    let position = arr.length;
+    for(let i = arr.length-1; i >= 0; i--) {
+        if(num > arr[i]) {
+            return position;
+        }
+        position--;
+    }
+    return position;
+}
+
 //! REPEAT A STRING X TIMES
 //* Repeats a string input number of times
 function repeatStringNumTimes(str, num) {
