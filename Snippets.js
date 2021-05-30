@@ -5,6 +5,19 @@
 // ? Question comment
 // Regular comment
 
+//! BOOLEAN TRUTH TEST
+//* Removes falsy values from an array
+//* Falsy values in JS: false, null, 0, "", undefined, and NaN.
+function bouncer(arr) {
+    let myArr = [];
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i]) {
+            myArr.push(arr[i]);
+        }
+    }
+    return myArr;
+  }
+
 //! CAPITALIZE THE FIRST LETTER OF WORD
 //* Capitalizes the first letter of a string
 function capitalize(line) {
