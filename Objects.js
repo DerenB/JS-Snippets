@@ -18,6 +18,10 @@ function Dog() {
 //! CONSTRUCT OBJECT
 let constructObj = new Dog();
 
+//! INSTANCE OF
+//* Checks if an object was created with a constructor
+constructObj instanceof Dog;
+
 //! METHOD
 let dog = {
 	name: "Spot",
