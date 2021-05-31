@@ -8,6 +8,13 @@ const TestObject = {
 	recruitable: true,
 };
 
+//! PARAMETERS
+function Dog(name, color) {
+	this.name = name; // Owned Property
+	this.color = color;
+}
+Dog.prototype.numLegs = 4; // Prototype Property
+
 //! CONSTRUCTOR FUNCTION
 function Dog() {
 	this.name = "Bob";
@@ -40,12 +47,9 @@ for (let property in ownPropObject) {
 	}
 }
 
-//! PARAMETERS
-function Dog(name, color) {
-	this.name = name;
-	this.color = color;
-	this.numLegs = 4;
-}
+//! PROTOTYPE
+//* Default value
+Dog.prototype.numLegs = 4;
 
 //! THIS
 let dog = {
