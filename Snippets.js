@@ -5,6 +5,25 @@
 // ? Question comment
 // Regular comment
 
+//! 2D ARRAY
+//* A function that splits an array (first argument) into groups the length of size (second argument)
+//* and returns them as a two-dimensional array.
+function chunkArrayInGroups(arr, size) {
+	let newArray = [];
+	let incr = 0;
+	let rounds = Math.ceil(arr.length / size);
+	for (let i = 0; i < rounds; i++) {
+		let subArr = [];
+		for (let k = 0; k < size; k++) {
+			if (incr === arr.length) break;
+			subArr.push(arr[incr]);
+			incr++;
+		}
+		newArray.push(subArr);
+	}
+	return newArray;
+}
+
 //! BOOLEAN TRUTH TEST
 //* Removes falsy values from an array
 //* Falsy values in JS: false, null, 0, "", undefined, and NaN.
