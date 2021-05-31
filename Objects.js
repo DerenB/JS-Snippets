@@ -1,5 +1,5 @@
 //! TEST OBJECT
-const testObject = {
+const TestObject = {
 	firstName: "Liara",
 	lastName: "T'Soni",
 	race: "Asari",
@@ -30,6 +30,15 @@ let dog = {
 		return "This dog has " + dog.numLegs + " legs.";
 	},
 };
+
+//! OWN PROPERTY
+let ownPropObject = new TestObject();
+let ownProps = [];
+for (let property in ownPropObject) {
+	if (ownPropObject.hasOwnProperty(property)) {
+		ownProps.push(property);
+	}
+}
 
 //! PARAMETERS
 function Dog(name, color) {
