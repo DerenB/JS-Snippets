@@ -54,7 +54,7 @@ Dog.prototype.numLegs = 4;
 //! PROTOTYPE OBJECT
 //* Set prototype to a new object that already contains the properties
 Dog.prototype = {
-	// Only change code below this line
+	constructor: Dog,	// Defines the constructor property
 	numLegs: 4,
 	eat: function() {
 	  console.log("nom nom nom");
