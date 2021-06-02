@@ -51,6 +51,19 @@ for (let property in ownPropObject) {
 //* Default value
 Dog.prototype.numLegs = 4;
 
+//! PROTOTYPE OBJECT
+//* Set prototype to a new object that already contains the properties
+Dog.prototype = {
+	// Only change code below this line
+	numLegs: 4,
+	eat: function() {
+	  console.log("nom nom nom");
+	},
+	describe: function() {
+	  console.log("My name is " + this.name);
+	}
+  };
+
 //! THIS
 let dog = {
 	name: "Spot",
