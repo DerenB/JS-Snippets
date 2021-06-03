@@ -25,6 +25,8 @@ function Dog() {
 //! CONSTRUCT OBJECT
 let constructObj = new Dog();
 
+//! INHERITANCE
+
 //! INSTANCE OF
 //* Checks if an object was created with a constructor
 constructObj instanceof Dog;
@@ -77,6 +79,8 @@ Animal.prototype = {
 		console.log("nom nom nom");
 	}
 };
+
+let sheltie = Object.create(Animal.prototype);
 
 //! THIS
 let dog = {
