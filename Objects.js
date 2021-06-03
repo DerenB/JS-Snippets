@@ -64,6 +64,9 @@ Dog.prototype = {
 	}
   };
 
+  //! PROTOTYPE CHAIN
+  Object.prototype.isPrototypeOf(Dog.prototype);
+
 //! THIS
 let dog = {
 	name: "Spot",
