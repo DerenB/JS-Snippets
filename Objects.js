@@ -62,10 +62,21 @@ Dog.prototype = {
 	describe: function() {
 	  console.log("My name is " + this.name);
 	}
-  };
+};
 
-  //! PROTOTYPE CHAIN
-  Object.prototype.isPrototypeOf(Dog.prototype);
+//! PROTOTYPE CHAIN
+Object.prototype.isPrototypeOf(Dog.prototype);
+
+//! SUPER TYPE
+//* Parent method
+function Animal() { }
+
+Animal.prototype = {
+	constructor: Animal,
+	eat: function() {
+		console.log("nom nom nom");
+	}
+};
 
 //! THIS
 let dog = {
