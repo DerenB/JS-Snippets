@@ -56,14 +56,14 @@ Dog.prototype.numLegs = 4;
 //! PROTOTYPE OBJECT
 //* Set prototype to a new object that already contains the properties
 Dog.prototype = {
-	constructor: Dog,	// Defines the constructor property
+	constructor: Dog, // Defines the constructor property
 	numLegs: 4,
-	eat: function() {
-	  console.log("nom nom nom");
+	eat: function () {
+		console.log("nom nom nom");
 	},
-	describe: function() {
-	  console.log("My name is " + this.name);
-	}
+	describe: function () {
+		console.log("My name is " + this.name);
+	},
 };
 
 //! PROTOTYPE CHAIN
@@ -71,13 +71,13 @@ Object.prototype.isPrototypeOf(Dog.prototype);
 
 //! SUPER TYPE
 //* Parent method
-function Animal() { }
+function Animal() {}
 
 Animal.prototype = {
 	constructor: Animal,
-	eat: function() {
+	eat: function () {
 		console.log("nom nom nom");
-	}
+	},
 };
 
 let sheltie = Object.create(Animal.prototype);
