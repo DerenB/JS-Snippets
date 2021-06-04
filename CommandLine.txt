@@ -7,7 +7,10 @@ CURRENT DIRECTORY   :   pwd
     -List all files (including hidden)   :   ls -a
     -List files with details    :   ls -lh
     -List files sorted by size  :   ls -lhS
-    -
+    -List files sorted by last modified     :   ls -lt
+
+- LINKS
+    -Hard Links: 
 
 // RANDOM 
 whoami  :   returns user name
