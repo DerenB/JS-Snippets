@@ -1,9 +1,13 @@
 // NOTES ON COMMAND LINE BASICS
 
 CURRENT DIRECTORY   :   pwd
-CURRENT DIRECTORY FILES & FOLDERS   :   ls
-CURRENT DIRECTORY LIST ALL FILES    :   ls -a
-CURRENT DIRECTORY LIST FILES WITH SIZE  :   ls -lh
+
+-LISTING FILES IN CURRENT DIRECTORY
+    -List Files & Folders   :   ls
+    -List all files (including hidden)   :   ls -a
+    -List files with details    :   ls -lh
+    -List files sorted by size  :   ls -lhS
+    -
 
 // RANDOM 
 whoami  :   returns user name
