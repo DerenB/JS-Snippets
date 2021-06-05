@@ -10,7 +10,9 @@ CURRENT DIRECTORY   :   pwd
     -List files sorted by last modified     :   ls -lt
 
 - LINKS
-    -Hard Links: 
+    -Hard Links: creates an identical copy of the linked file on disk, that gets updated automatically
+    as the source file gets updated.
+        $ ln a.txt b.txt
 
 // RANDOM 
 whoami  :   returns user name
