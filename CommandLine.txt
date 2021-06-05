@@ -1,5 +1,11 @@
 // NOTES ON COMMAND LINE BASICS
 
+DIRECTORY NAVIGATION
+    -Change Directory   :   $ cd ~/Documents
+    -Current Directory  :   pwd
+    -Navigate UP        :   $ cd ..
+    -Navigate to home   :   cd
+
 CURRENT DIRECTORY   :   pwd
 
 -LISTING FILES IN CURRENT DIRECTORY
