@@ -5,6 +5,8 @@ DIRECTORY NAVIGATION
     -Current Directory  :   pwd
     -Navigate UP        :   $ cd ..
     -Navigate to home   :   cd
+    -Create Directory   :   mkdir
+    -Create Files       :   touch name.extension
 
 CURRENT DIRECTORY   :   pwd
 
