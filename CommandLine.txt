@@ -29,4 +29,5 @@ CURRENT DIRECTORY   :   pwd
         $ ln a.txt b.txt
 
 // RANDOM 
+clear   :   clears out past commands but not the history
 whoami  :   returns user name
