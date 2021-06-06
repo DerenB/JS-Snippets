@@ -5,8 +5,14 @@ DIRECTORY NAVIGATION
     -Current Directory  :   pwd
     -Navigate UP        :   $ cd ..
     -Navigate to home   :   cd
+
+CREATING & DELETING FILES
     -Create Directory   :   mkdir
     -Create Files       :   touch name.extension
+    -Open Directory in VSCode   :   code -a .
+    -Delete File        :   rm name.extension
+    -Delete Directory   :   rmdir name
+
 
 CURRENT DIRECTORY   :   pwd
 
