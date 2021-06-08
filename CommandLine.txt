@@ -29,5 +29,7 @@ CURRENT DIRECTORY   :   pwd
         $ ln a.txt b.txt
 
 // RANDOM 
+cal     :   show the current month's calendar
 clear   :   clears out past commands but not the history
 whoami  :   returns user name
+date    :   show the system date and time
