@@ -300,6 +300,13 @@ function reverseString(str) {
 	return newStr;
 }
 
+//! SWAP CASE
+//* Lowercase characters become uppercase, uppercase becomes lowercase
+const swapCase = (str) =>
+	[...str]
+		.map((c) => (c === c.toLowerCase() ? c.toUpperCase() : c.toLowerCase()))
+		.join("");
+
 //! TIME IN MILLISECONDS, HUMAN READABLE
 const formatDuration = (ms) => {
 	if (ms < 0) ms = -ms;
