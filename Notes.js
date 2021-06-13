@@ -27,6 +27,13 @@ myArray.push("value");
 //! ARRAY, COMBINE CHAR ARRAY INTO STRING
 let joinString = myArray.join("");
 
+//! ARRAY, MAP
+//* Creates a new array by applying the provided transformation 
+//* to each element of the original array
+const arr = [1, 2, 3];
+const double = x => x * 2;
+arr.map(double);
+
 //! CLASS, CONSTRUCTOR FUNCTION
 class ClassConstructor {
     constructor(inputVar) {
