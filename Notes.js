@@ -27,12 +27,19 @@ myArray.push("value");
 //! ARRAY, COMBINE CHAR ARRAY INTO STRING
 let joinString = myArray.join("");
 
+//! ARRAY, FILTER
+//* Creates a new array by using a filtering function to keep
+//* only elements that return true
+const arr = [1, 2, 3];
+const isOdd = x => x % 2 === 1;
+arr.filter(isOdd); // [1, 3]
+
 //! ARRAY, MAP
 //* Creates a new array by applying the provided transformation 
 //* to each element of the original array
 const arr = [1, 2, 3];
 const double = x => x * 2;
-arr.map(double);
+arr.map(double);    // [2,4,6]
 
 //! CLASS, CONSTRUCTOR FUNCTION
 class ClassConstructor {
