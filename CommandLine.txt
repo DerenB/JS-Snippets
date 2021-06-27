@@ -7,7 +7,7 @@ DIRECTORY NAVIGATION
     -Navigate to home   :   cd
 
 CREATING & DELETING FILES
-    -Create Directory   :   mkdir
+    -Create Directory   :   mkdir   name
     -Create Files       :   touch name.extension
     -Open Directory in VSCode   :   code -a .
     -Delete File        :   rm name.extension
@@ -28,10 +28,20 @@ CURRENT DIRECTORY   :   pwd
     as the source file gets updated.
         $ ln a.txt b.txt
 
+- REPOSITORY
+    -Clone Repository to local drive    :   git clone *ulr copied from github
+    -Commit items                       :   git commit -m "ADD filename"
+    -Push to github                     :   git push origin main
+    -Show status of Repository          :   git status 
+        -Items in red have not been staged
+        -Items in green have been stages
+    -Stage / Add items                  : git add item
+    -Stage all items in working Directory   :   git add .
+
 - SET USER NAME & EMAIL
-git config --global user.name "Name"        : sets user name
-git config --global user.email "email"      : sets user email
-git config --list                           : lists all configured items
+    -Set the user name  :   git config --global user.name "Name"
+    -Set the user email :   git config --global user.email "email"
+    -List all configured items  :   git config --list
 
 // RANDOM 
 cal     :   show the current month's calendar
