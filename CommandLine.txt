@@ -28,6 +28,11 @@ CURRENT DIRECTORY   :   pwd
     as the source file gets updated.
         $ ln a.txt b.txt
 
+- SET USER NAME & EMAIL
+git config --global user.name "Name"        : sets user name
+git config --global user.email "email"      : sets user email
+git config --list                           : lists all configured items
+
 // RANDOM 
 cal     :   show the current month's calendar
 clear   :   clears out past commands but not the history
