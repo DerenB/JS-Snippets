@@ -77,6 +77,11 @@ function rollDefault(numSides = 6) {
     return Math.floor(Math.random() * numSides) + 1;
 }
 
+//! ROUND DOWN
+function RoundDown(input) {
+    return Math.floor(input);
+}
+
 //! DESTRUCTURING, ARRAYS
 //* Used to assign variables to values in an array
 const[gold, silver, bronze, ...everyoneElse] = testArrayNumbers;
