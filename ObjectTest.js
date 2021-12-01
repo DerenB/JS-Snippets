@@ -24,6 +24,7 @@ let bitterling = new Fish("Bitterling","bitterling.png",900,"River",1,0,2359,-1,
 let paleChub = new Fish("Pale Chub","palechub.png",200,"River",1,0900,1600,-1,-1,1,12,-1,-1);
 let crucianCarp = new Fish("Crucian Carp","cruciancarp.png",160,"River",2,0,2359,-1,-1,1,12,-1,-1);
 let dace = new Fish("Dace","dace.png",240,"River",3,1600,900,-1,-1,1,12,-1,-1);
+let carp = new Fish("Carp,","carp.png",300,"Pond",4,0,2359,-1,-1,1,12,-1,-1);
 
 fishList.push(bitterling);
 fishList.push(paleChub);
