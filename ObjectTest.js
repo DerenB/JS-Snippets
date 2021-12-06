@@ -1,4 +1,5 @@
 
+//Default constructor
 class Fish {
     constructor(name,image,price,location,shadowSize,timeStartOne,timeEndOne,timeStartTwo,timeEndTwo,
         monthStartOne,monthEndOne,monthStartTwo,monthEndTwo) {
@@ -20,6 +21,7 @@ class Fish {
 
 let fishList = [];
 
+// Creating the fish array items
 let bitterling = new Fish("Bitterling","bitterling.png",900,"River",1,0,2359,-1,-1,11,03,-1,-1);
 let paleChub = new Fish("Pale Chub","palechub.png",200,"River",1,0900,1600,-1,-1,1,12,-1,-1);
 let crucianCarp = new Fish("Crucian Carp","cruciancarp.png",160,"River",2,0,2359,-1,-1,1,12,-1,-1);
