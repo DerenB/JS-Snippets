@@ -29,6 +29,7 @@ let koi = new Fish("Koi","koi.png",4000,"Pond",4,1600,900,-1,-1,1,12,-1,-1);
 let goldfish = new Fish("Goldfish","goldfish.png",1300,"Pond",1,0,2359,-1,-1,1,12,-1,-1);
 let popEyedGoldfish = new Fish("Pop-Eyed Goldfish","popeyedgoldfish.png",1300,"Pond",1,900,1600,-1,-1,1,12);
 let rachuGoldfish = new Fish("Ranchu Goldfish","ranchugoldfish.png",4500,"Pond",2,900,1600,-1,-1,1,12,-1,-1);
+let killifish = new Fish("Killifish","killifish.png",300,"Pond",1,2359,-1,-1,4,8,-1,-1);
 
 fishList.push(bitterling);
 fishList.push(paleChub);
