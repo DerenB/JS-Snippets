@@ -62,6 +62,7 @@ let popEyedGoldfish = new Fish("Pop-Eyed Goldfish","popeyedgoldfish.png",1300,"P
 let rachuGoldfish = new Fish("Ranchu Goldfish","ranchugoldfish.png",4500,"Pond",2,900,1600,1,12);
 let killifish = new Fish("Killifish","killifish.png",300,"Pond",1,2359,4,8);
 let crawfish = new Fish("Crawfish","crawfish.png",200,"Pond",2,0,2359,4,9);
+let softShelledTurtle = new Fish("Soft-shelled Turtle","softshelledturtle.png",3750,"River",4,1600,900,8,9);
 
 fishList.push(bitterling);
 fishList.push(paleChub);
