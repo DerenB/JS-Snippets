@@ -13,22 +13,22 @@ class Fish {
         this.monthEnd = monthEnd;
     }
 
-    constructor(name,image,price,location,shadowSize,timeStart,timeEnd,monthStart,monthEnd,
-        timeStartTwo,timeEndTwo,monthStartTwo,monthEndTwo) {
-        this.name = name;
-        this.image = image;
-        this.price = price;
-        this.location = location;
-        this.shadowSize = shadowSize;
-        this.timeStart = timeStart;
-        this.timeEnd = timeEnd;
-        this.monthStart = monthStart;
-        this.monthEnd = monthEnd;
-        this.timeStartTwo = timeStartTwo;
-        this.timeEndTwo = timeEndTwo;
-        this.monthStartTwo = monthStartTwo;
-        this.monthEndTwo = monthEndTwo;
-    }
+    // constructor(name,image,price,location,shadowSize,timeStart,timeEnd,monthStart,monthEnd,
+    //     timeStartTwo,timeEndTwo,monthStartTwo,monthEndTwo) {
+    //     this.name = name;
+    //     this.image = image;
+    //     this.price = price;
+    //     this.location = location;
+    //     this.shadowSize = shadowSize;
+    //     this.timeStart = timeStart;
+    //     this.timeEnd = timeEnd;
+    //     this.monthStart = monthStart;
+    //     this.monthEnd = monthEnd;
+    //     this.timeStartTwo = timeStartTwo;
+    //     this.timeEndTwo = timeEndTwo;
+    //     this.monthStartTwo = monthStartTwo;
+    //     this.monthEndTwo = monthEndTwo;
+    // }
 }
 
 let fishList = [];
@@ -46,6 +46,8 @@ let rachuGoldfish = new Fish("Ranchu Goldfish","ranchugoldfish.png",4500,"Pond",
 let killifish = new Fish("Killifish","killifish.png",300,"Pond",1,2359,4,8);
 let crawfish = new Fish("Crawfish","crawfish.png",200,"Pond",2,0,2359,4,9);
 let softShelledTurtle = new Fish("Soft-shelled Turtle","softshelledturtle.png",3750,"River",4,1600,900,8,9);
+let snappingTurtle = new Fish("Snapping Turtle","snappingturtle.png",5000,"River",4,2100,400,4,10);
+
 
 fishList.push(bitterling);
 fishList.push(paleChub);
