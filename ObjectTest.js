@@ -29,23 +29,6 @@ class Fish {
         this.monthStartTwo = monthStartTwo;
         this.monthEndTwo = monthEndTwo;
     }
-
-    // constructor(name,image,price,location,shadowSize,timeStartOne,timeEndOne,timeStartTwo,timeEndTwo,
-    //     monthStartOne,monthEndOne,monthStartTwo,monthEndTwo) {
-    //     this.name = name;
-    //     this.image = image;
-    //     this.price = price;
-    //     this.location = location;
-    //     this.shadowSize = shadowSize;
-    //     this.timeStartOne = timeStartOne;
-    //     this.timeEndOne = timeEndOne;
-    //     this.timeStartTwo = timeStartTwo;
-    //     this.timeEndTwo = timeEndTwo;
-    //     this.monthStartOne = monthStartOne;
-    //     this.monthEndOne = monthEndOne;
-    //     this.monthStartTwo = monthStartTwo;
-    //     this.monthEndTwo = monthEndTwo;
-    // }
 }
 
 let fishList = [];
