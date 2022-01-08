@@ -48,9 +48,10 @@ const draw = () => {
 		const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
 		context.fillText(text, i*fontSize, rainDrops[i]*fontSize);
 
-        let rand = getRandomInt(0,500);
+        let rand = getRandomInt(0,1000);
         if (rand === 1) {
-            context.fillStyle = '#bfffbf';
+            //context.fillStyle = '#bfffbf';
+            context.fillStyle = "#ffffff";
         }
 		
 		if(rainDrops[i]*fontSize > canvas.height && Math.random() > 0.975){
