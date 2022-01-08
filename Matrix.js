@@ -38,4 +38,5 @@ const draw = () => {
 	}
 };
 
-setInterval(draw, 30);
+//Sets the speed of the rain. Higher #, lower speed
+setInterval(draw, 50);
