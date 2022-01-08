@@ -16,8 +16,8 @@ const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const nums = '012345678901234567890123456789';
 
 // Combining all of the characters into one variable
-//const alphabet = korean1 + korean2 + korean3 + korean4 + latin + nums + katakana;
-const alphabet = latin + katakana;
+//const alphabet = korean3 + korean4 + latin + nums + katakana;
+const alphabet = latin + katakana + nums;
 
 // Character font size and number of columns
 const fontSize = 25;
