@@ -4,6 +4,7 @@ const context = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+// Character pool for animation
 const katakana = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッンアァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン';
 const korean1 = 'ㅂㅈㅉㄷㄸㄱㄲㅅㅆㅁㄴㅇㄹㅎㅋㅌㅊㅍㅂㅈㅉㄷㄸㄱㄲㅅㅆㅁㄴㅇㄹㅎㅋㅌㅊㅍㅂㅈㅉㄷㄸㄱㄲㅅㅆㅁㄴㅇㄹㅎㅋㅌㅊㅍ';
 const korean2 = 'ㅛㅕㅑㅐㅔㅗㅓㅏㅣㅠㅜㅡㅛㅕㅑㅐㅔㅗㅓㅏㅣㅠㅜㅡㅛㅕㅑㅐㅔㅗㅓㅏㅣㅠㅜㅡ';
@@ -12,10 +13,11 @@ const korean4 = '안녕하세요주세요죄송합니다아니요아마도도와
 const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const nums = '0123456789';
 
-//const alphabet = katakana + latin + nums;
+// Combining all of the characters into one variable
 const alphabet = korean1 + korean2 + korean3 + korean4 + latin + nums + katakana;
 
-const fontSize = 16;
+// Character font size and number of columns
+const fontSize = 25;
 const columns = canvas.width/fontSize;
 
 const rainDrops = [];
