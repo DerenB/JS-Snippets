@@ -20,7 +20,7 @@ const nums = '012345678901234567890123456789';
 const alphabet = latin + katakana + nums;
 
 // Character font size and number of columns
-const fontSize = 25;
+const fontSize = 20;
 const columns = canvas.width/fontSize;
 
 const rainDrops = [];
@@ -37,7 +37,7 @@ function getRandomInt(min, max) {
   
 const draw = () => {
     // Makes the prior characters fade out
-	context.fillStyle = 'rgba(0, 0, 0, 0.05)';
+	context.fillStyle = 'rgba(0, 0, 0, 0.06)';
 	context.fillRect(0, 0, canvas.width, canvas.height);
 	
 	context.fillStyle = '#0f0';
