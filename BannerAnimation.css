@@ -1,38 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
 #test {
     font-family: 'Iceland', sans-serif;
     font-size: 172px;
     font-style: italic;
+    margin-top: 0;
+    margin-left: 50px;
 }
-
 
 #top {
-    width: 70px;
     height: 10px;
-    margin: 30px auto;
-    position: fixed;
-    left: 20%;
-
-
-    color: black;
+    width: 100px;
+    margin-left: -100px;
+    margin-top: 200px;
     background: blue;
-    animation-name: shift;
-    animation-iteration-count: 3s;
+    position: relative;
+
+    animation: rainbow 4s infinite;
 }
 
-@keyframes shift {
-    50% {
-        left: 60%;
+@keyframes rainbow {
+    0% {
+        left: 0px;
+    }
+    4% {
+        left: 1000px;
+    }
+    100% {
+        left: 1000px;
+    }
+}
 
+#right {
+    height: 100px;
+    width: 10px;
+    margin-left: 990px;
+    margin-top: -210px;
+    background: blue;
+    position: relative;
+
+    animation: right 4s infinite;
+}
+@keyframes right {
+    0% {
+        top: 0px;
+    }
+    5% {
+        top: 200px;
+    }
+    100% {
+        top: 200px;
+    }
+}
+
+#bottom {
+    height: 10px;
+    width: 100px;
+    margin-right: 0;
+    background: red;
+    position: relative;
+    transform: skewY(-11deg);
+
+    animation: bottom 2s infinite;
+}
+@keyframes bottom {
+    0% {
+        right: -100%;
+    }
+    66% {
+        right: -50%;
+    }
+    100% {
+        right: -50%;
+    }
+}
+
+#left {
+    height: 200px;
+    width: 10px;
+    margin-left: 900px;
+    margin-top: -300px;
+    background: blue;
+    position: relative;
+
+    animation: left 4s infinite;
+}
+@keyframes left {
+    0% {
+        top: 0px;
+    }
+    7% {
+        top: 200px;
+    }
+    100% {
+        top: 200px;
     }
 }
 
 
+/* #top {
+    width: 400px;
+    height: 12px;
+    background: red;
+    position: absolute;
+    top: 400px;
+    left: 1100px;
+    transform: translate(-50%, -50%);
+}
+#top::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 12px;
+    background: green;
+    animation: animate 5s linear infinite;
+}
 
 
+#topCover {
+    width: 400px;
+    height: 12px;
+    background: blue;
+    position: absolute;
+    top: 400px;
+    left: 1000px;
+    transform: translate(-50%, -50%);
+}
 
+#topCover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 12px;
+    background: green;
+    animation: animate 5s linear infinite;
+}
 
+@keyframes animate {
+    0% {
+        left: 0;
+    }
 
-#ball {
+    50% {
+        left: 100%;
+    }
+
+    0% {
+        left: 0;
+    }
+} */
+
+/* #ball {
     width: 70px;
     height: 70px;
     margin: 50px auto;
@@ -53,4 +179,4 @@
       left: 60%;
 
     }
-}
+} */
