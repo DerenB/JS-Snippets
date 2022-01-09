@@ -63,12 +63,12 @@ body {
     margin-right: 0;
     background: red;
     position: relative;
-    transform: skewY(-11deg);
+    transform: skewY(-101deg);
 
     animation: bottom 2s infinite;
 }
 @keyframes bottom {
-    0% {
+    /* 0% {
         right: -100%;
     }
     66% {
@@ -76,6 +76,12 @@ body {
     }
     100% {
         right: -50%;
+    } */
+    0% {
+        transform: translateX(0px) translateY(0px);
+    }
+    100% {
+        transform: translateX(100px) translateY(100px);
     }
 }
 
